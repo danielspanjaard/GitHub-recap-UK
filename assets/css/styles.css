@@ -459,8 +459,12 @@ textarea:focus {
 }
 
 .map-container iframe {
-  filter: invert(90%) hue-rotate(180deg);
   opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.map-container iframe:hover {
+  opacity: 1;
 }
 
 /* CTA Center Styles */
