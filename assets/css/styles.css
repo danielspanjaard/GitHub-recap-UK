@@ -11,7 +11,8 @@
   --accent-blue: #0969da; /* GitHub blue */
   --accent-blue-glow: 9 105 218;
   --danger: #f85149;
-  --radius: 20px; /* Pill-shaped buttons */
+  --radius: 12px; /* Pill-shaped buttons */
+  --accent-blue-hover: #0860ca;
   --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
@@ -78,8 +79,8 @@ a:hover { text-decoration: underline; }
   border-color: var(--accent-blue);
 }
 .pill-accent:hover {
-  background: #0860ca;
-  border-color: #0860ca;
+  background: var(--accent-blue-hover);
+  border-color: var(--accent-blue-hover);
 }
 
 .hero {
