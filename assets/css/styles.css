@@ -394,7 +394,86 @@ textarea:focus {
   color: var(--muted);
 }
 
+/* Location Section Styles */
+.location {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
 
+.location-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.venue-details h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-family: var(--font-mono);
+  letter-spacing: .5px;
+  color: var(--accent);
+}
+
+.venue-details p {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+
+.venue-details a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.venue-details a:hover {
+  color: var(--accent-light);
+  text-decoration: underline;
+}
+
+.welcome-note {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.welcome-note p {
+  margin: 0;
+}
+
+.map-container {
+  position: relative;
+  min-height: 300px;
+}
+
+.map-container iframe {
+  filter: invert(90%) hue-rotate(180deg);
+  opacity: 0.9;
+}
+
+/* CTA Center Styles */
+.cta-center {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.btn-large {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
 
 .site-footer {
   padding: 2.2rem 0 2.5rem;
@@ -409,4 +488,7 @@ textarea:focus {
   .hero { padding-top: 3rem; }
   .nav a { margin-left: .4rem; }
   .cta-wrap { flex-direction: column; align-items: flex-start; }
+  .location-grid { gap: 1.5rem; }
+  .map-container { min-height: 250px; }
+  .btn-large { padding: 0.65rem 1.5rem; font-size: 1rem; }
 }
