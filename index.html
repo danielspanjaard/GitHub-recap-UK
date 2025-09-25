@@ -18,7 +18,8 @@
         <a href="#about">About</a>
         <a href="#agenda">Agenda</a>
         <a href="#takeaways">Takeaways</a>
-        <a href="#register" class="pill pill-accent">Register</a>
+        <a href="#location">Location</a>
+        <a href="https://docs.google.com/forms/d/1J_Inby0cfFj-eBvBu2gGpTjuWGWCxsnGTC7Umhn96O0/viewform" target="_blank" rel="noopener" class="pill pill-accent">Register</a>
       </nav>
     </div>
   </header>
@@ -37,7 +38,7 @@
           <li><strong>Hosts:</strong> GitHub • Microsoft • Xebia</li>
         </ul>
         <div class="cta-wrap">
-          <a href="#register" class="btn btn-primary">Request Your Seat</a>
+          <a href="https://docs.google.com/forms/d/1J_Inby0cfFj-eBvBu2gGpTjuWGWCxsnGTC7Umhn96O0/viewform" target="_blank" rel="noopener" class="btn btn-primary">Request Your Seat</a>
           <a href="#agenda" class="btn btn-outline">View Agenda</a>
         </div>
 
@@ -151,81 +152,48 @@
     </div>
   </section>
 
+  <section id="location" class="section location">
+    <div class="container">
+      <h2>Event Location</h2>
+      <div class="location-grid">
+        <div class="location-info">
+          <div class="venue-details">
+            <h3>Venue</h3>
+            <p><strong>Storey Club</strong></p>
+            <p><a href="https://maps.app.goo.gl/x5EPHn2i8T2eLvfA8" target="_blank" rel="noopener">4 Kingdom St, London W2 6BD</a></p>
+          </div>
+          <div class="welcome-note">
+            <p>Arrive early for coffee and informal introductions. The program begins promptly at 10:30. Badge collection at reception.</p>
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.608872313458!2d-0.17579698423131123!3d51.517403779635864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c6b2cd%3A0x4b9c6a1d5c4e6f8a!2s4%20Kingdom%20St%2C%20London%20W2%206BD%2C%20UK!5e0!3m2!1sen!2sus!4v1735843200000!5m2!1sen!2sus"
+            width="100%" 
+            height="300" 
+            style="border:0; border-radius: var(--radius);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Event Location - Storey Club, 4 Kingdom St, London">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="register" class="section register">
     <div class="container narrow">
-      <h2>Request a Seat</h2>
+      <h2>Request Your Seat</h2>
       <p class="form-intro">
-        Seats are limited. Complete the form below. We'll confirm via email if allocated.
+        Seats are limited and allocated on a first-come, first-served basis. 
+        Complete our registration form to secure your place at this exclusive event.
       </p>
-      <form id="registrationForm" novalidate>
-        <div class="form-grid">
-          <label>
-            <span>Full Name *</span>
-            <input type="text" name="name" required maxlength="120" />
-            <small class="error"></small>
-          </label>
-          <label>
-            <span>Work Email *</span>
-            <input type="email" name="email" required />
-            <small class="error"></small>
-          </label>
-          <label>
-            <span>Company / Organization *</span>
-            <input type="text" name="company" required maxlength="160" />
-            <small class="error"></small>
-          </label>
-          <label>
-            <span>Role *</span>
-            <select name="role" required>
-              <option value="">Select...</option>
-              <option>DevOps Engineer</option>
-              <option>Lead Developer</option>
-              <option>Engineering Manager</option>
-              <option>CTO</option>
-              <option>IT Decision Maker</option>
-              <option>Other</option>
-            </select>
-            <small class="error"></small>
-          </label>
-          <label>
-            <span>GitHub Username (optional)</span>
-            <input type="text" name="github" pattern="^[A-Za-z0-9-]{1,39}$" />
-            <small class="error"></small>
-          </label>
-          <label>
-            <span>Dietary Requirements</span>
-            <input type="text" name="dietary" maxlength="200" />
-          </label>
-          <label>
-            <span>Accessibility Needs</span>
-            <textarea name="accessibility" rows="2" maxlength="400"></textarea>
-          </label>
-          <label class="span-2">
-            <span>What do you hope to gain? (optional)</span>
-            <textarea name="goals" rows="3" maxlength="600"></textarea>
-          </label>
-        </div>
-        <fieldset class="consents">
-          <label class="checkbox">
-            <input type="checkbox" name="coc" required />
-            <span>I agree to abide by the event Code of Conduct.</span>
-          </label>
-          <label class="checkbox">
-            <input type="checkbox" name="marketing" />
-            <span>I'd like to receive related updates & resources.</span>
-          </label>
-        </fieldset>
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Submit Request</button>
-          <div class="status" id="formStatus" role="status" aria-live="polite"></div>
-        </div>
-        <p class="privacy-note">
-          We will use your information only for event administration unless you opt in for updates. For more details see GitHub's
-          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Privacy Statement</a>.
-        </p>
-      </form>
+      <div class="cta-center">
+        <a href="https://docs.google.com/forms/d/1J_Inby0cfFj-eBvBu2gGpTjuWGWCxsnGTC7Umhn96O0/viewform" target="_blank" rel="noopener" class="btn btn-primary btn-large">Request Your Seat</a>
+      </div>
       <div class="alt-submission">
-        <p><strong>Alternate:</strong> Prefer not to use the form? Email <a href="mailto:events@example.com">events@example.com</a>.</p>
+        <p><strong>Questions?</strong> Email <a href="mailto:events@example.com">events@example.com</a> for assistance.</p>
       </div>
     </div>
   </section>
@@ -237,6 +205,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/register.js" defer></script>
+
 </body>
 </html>
