@@ -157,7 +157,7 @@ a:hover { text-decoration: underline; }
   min-height: 340px;
   border: 1px solid var(--border);
   border-radius: 16px;
-  background: radial-gradient(circle at 30% 30%, #2d1b69, #0d1017 70%);
+  background: radial-gradient(circle at 30% 30%, #2d1b69, var(--bg) 70%);
   overflow: hidden;
 }
 
