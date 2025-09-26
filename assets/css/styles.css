@@ -27,7 +27,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--accent); text-decoration: none; }
+a { color: var(--accent-blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .container {
@@ -141,28 +141,28 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 .btn-primary {
-  --btn-bg: var(--accent);
-  --btn-border: var(--accent);
+  --btn-bg: var(--accent-blue);
+  --btn-border: var(--accent-blue);
   --btn-color: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,.2);
 }
 .btn-primary:hover {
-  --btn-bg: var(--accent-secondary);
-  --btn-border: var(--accent-secondary);
-  box-shadow: 0 2px 8px rgba(var(--accent-glow)/.3);
+  --btn-bg: var(--accent-blue-hover);
+  --btn-border: var(--accent-blue-hover);
+  box-shadow: 0 2px 8px rgba(var(--accent-blue-glow)/.3);
   transform: translateY(-1px);
 }
 .btn-primary:focus {
-  box-shadow: 0 0 0 3px rgba(var(--accent-glow)/.3);
+  box-shadow: 0 0 0 3px rgba(var(--accent-blue-glow)/.3);
   outline: none;
 }
 .btn-outline {
   background: transparent;
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
 }
 .btn-outline:hover {
-  background: var(--accent);
+  background: var(--accent-blue);
   color: #fff;
 }
 
@@ -181,7 +181,7 @@ a:hover { text-decoration: underline; }
   height: 260px;
   top: -40px;
   right: -40px;
-  background: radial-gradient(circle at 35% 35%, var(--accent-light), var(--accent-secondary) 70%, rgba(0,0,0,0));
+  background: radial-gradient(circle at 35% 35%, var(--accent-blue), var(--accent-blue-hover) 70%, rgba(0,0,0,0));
   filter: blur(2px);
   opacity: 0.3;
   animation: float 9s ease-in-out infinite;
@@ -294,7 +294,7 @@ a:hover { text-decoration: underline; }
 }
 .takeaway-list li:before {
   content: "▹";
-  color: var(--accent);
+  color: var(--accent-blue);
   margin-right: .6rem;
   font-family: var(--font-mono);
 }
@@ -349,8 +349,8 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(var(--accent-glow)/0.25);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 2px rgba(var(--accent-blue-glow)/0.25);
 }
 
 .error {
@@ -373,7 +373,7 @@ textarea:focus {
   margin-top: 3px;
   width: 16px;
   height: 16px;
-  accent-color: var(--accent);
+  accent-color: var(--accent-blue);
 }
 
 .consents {
@@ -434,7 +434,7 @@ textarea:focus {
   font-size: 1.1rem;
   font-family: var(--font-mono);
   letter-spacing: .5px;
-  color: var(--accent);
+  color: var(--accent-blue);
 }
 
 .venue-details p {
@@ -443,13 +443,13 @@ textarea:focus {
 }
 
 .venue-details a {
-  color: var(--accent);
+  color: var(--accent-blue);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .venue-details a:hover {
-  color: var(--accent-light);
+  color: var(--accent-blue-hover);
   text-decoration: underline;
 }
 
